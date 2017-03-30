@@ -1,3 +1,20 @@
+        function hasEvent(event, entry) {
+          return entry.events.indexOf(event) != -1;
+        }
+        
+        function tableFor(event, journal) {
+          var table = [0, 0, 0, 0];
+          for (var i = 0; i < journal.length; i++) {
+            var entry = journal[i], index = 0;
+            if (hasEvent(event, entry)) index += 1;
+            if (entry.squirrel) index += 2;
+            table[index] += 1;
+          }
+          return table;
+        }
+
+        //require('./includes.js');
+        
         //var journal;
         var journal = [
   {"events":["carrot","exercise","weekend"],"squirrel":false},
@@ -97,3 +114,6 @@
 // `require('./path/to/04_data.js')` will get you the array.
 if (typeof module != "undefined" && module.exports)
   module.exports = journal;
+        
+        console.log(tableFor("pizza",journal));
+        // ? [76, 9, 4, 1]
