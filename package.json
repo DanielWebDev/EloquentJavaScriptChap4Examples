@@ -1,0 +1,19 @@
+{
+  "name": "chapter4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielWebDev/EloquentJavaScriptChap4Examples.git"
+  },
+  "author": "Daniel Kline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielWebDev/EloquentJavaScriptChap4Examples/issues"
+  },
+  "homepage": "https://github.com/DanielWebDev/EloquentJavaScriptChap4Examples#readme"
+}
