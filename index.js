@@ -17,3 +17,4 @@
         // ? [76, 9, 4, 1]
         
         console.log(tableFor("pizza",journal));
+        
